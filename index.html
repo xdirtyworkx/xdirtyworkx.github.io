@@ -14,6 +14,16 @@
   <link rel="stylesheet" href="dirty.css">
   
 </head>
+  
+  <style>
+.center {
+text-align: center;
+}
+.mySlides {display:none;}
+</style>
+</head>
+
+
 <body>
     <div class="Table">
       <div class="T__middle">
@@ -34,7 +44,31 @@
   <span class="js-day"></span>
 </div>
 
+<div class="center">
+</div>
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-01.png" style="width:100%">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-02.png" style="width:100%">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-03.png" style="width:100%">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-04.png" style="width:100%">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-05.png" style="width:100%">
+</div>
 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
 
 <script src="work.js"></script>
   <div class="Tracking">
