@@ -3,22 +3,59 @@
 <head>
   <meta charset="utf-8">
   <title>GOOD MUSIC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.4">
+
+  <meta name="author"              content="builtbylane.com &times; davidbaker.tv">
+  <meta property="og:title"        content="GOOD MUSIC">
+  <meta property="og:url"          content="https://good-music.com">
+  <meta property="og:site_name"    content="GOOD MUSIC">
+  <meta property="og:type"         content="website">
 
   <link rel="stylesheet" href="dirty.css">
   
-  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js"></script><![endif]-->
 </head>
+  
+<style>
+.center {
+text-align: center;
+}
+.mySlides {display:none;}
+</style>
+</head>
+
+
 <body>
-    
+<div class="center">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-01.png" alt="dirt-1" class="center" width="200" height="153">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-02.png" alt="dirt-1" class="center" width="200" height="153">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-03.png" alt="dirt-1" class="center" width="200" height="153">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-04.png" alt="dirt-1" class="center" width="200" height="153">
+  <img class="mySlides" src="https://raw.githubusercontent.com/xdirtyworkx/xdirtyworkx.github.io/main/dirt-05.png" alt="dirt-1" class="center" width="200" height="153">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
 <div class="Time">
   <span class="js-time"></span>
   <span class="js-day"></span>
 </div>
-
-
-
-<script src="work,js"></script>
+  
+<script src="https://cdn.good-music.com/assets/scripts/app-f68326c4ea.js"></script>
   <div class="Tracking">
     <script>
       !function(G,D,M,S,C){G.GoogleAnalyticsObject=M;G[M]||(G[M]=function(){
@@ -30,6 +67,6 @@
       ga('send', 'pageview');
     </script>
   </div>
-
+  
 </body>
 </html>
