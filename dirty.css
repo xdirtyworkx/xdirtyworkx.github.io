@@ -39,7 +39,8 @@ a:hover {
     text-decoration: none;
 }
 body {
-    color: #000;
+    background-color: black;
+    color: #FFFFFF;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 27px;
     font-weight: 700;
