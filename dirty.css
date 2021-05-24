@@ -47,8 +47,8 @@ body {
     text-transform: uppercase;
     padding: 0;
     margin: 0;
-    -webkit-animation: a 3s ease;
-    animation: a 3s ease;
+    -webkit-animation: a 0.31s ease;
+    animation: a 0.31s ease;
 }
 @media only screen and (max-width: 768px) {
     body {
@@ -70,8 +70,8 @@ html {
     min-height: 100%;
 }
 body {
-    -webkit-animation: a 2.9s ease;
-    animation: a 2.9s ease;
+    -webkit-animation: a 0.3s ease;
+    animation: a 0.3s ease;
 }
 .Table {
     display: table;
